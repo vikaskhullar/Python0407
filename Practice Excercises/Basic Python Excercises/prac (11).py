@@ -10,15 +10,18 @@ import string
 
 ignored = string.punctuation + " "
 
-def is_palindrome(str):
-  cleanstr = ""
-  for i in str:
-    cleanstr += "" if i in ignored else i # I love Python ternary operator
+def is_palindrome(st):
+    cleanstr = ""
+    for i in st:
+        cleanstr += "" if i in ignored else i # I love Python ternary operator
+    print(cleanstr.lower())
+    return cleanstr.lower() == cleanstr[::-1].lower()
 
-  return cleanstr.lower() == cleanstr[::-1].lower()
+
+
 
 #test
-print is_palindrome("Go hang a salami I'm a lasagna hog.")
+print (is_palindrome("Go hang a salami I'm a lasagna hog."))
 print is_palindrome("Was it a rat I saw?")
 print is_palindrome("Step on no pets")
 print is_palindrome("Sit on a potato pan, Otis!")

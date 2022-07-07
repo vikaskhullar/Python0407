@@ -2,9 +2,10 @@
 of a string. For example, reverse("I am testing") should 
 return the string "gnitset ma I"."""
 
-def reverse(str):
-  return str[::-1]
+def reverse(st):
+  return st[::-1]
 
 #test
 print (reverse("I am testing"))
-print reverse("It's cool, isn't it?")
+
+print (reverse("It's cool, isn't it?"))

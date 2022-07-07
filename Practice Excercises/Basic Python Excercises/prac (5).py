@@ -6,15 +6,15 @@ generate_n_chars(5,"x") should return the string "xxxxx".
 that will evaluate to "xxxxx". For the sake of the exercise you should 
 ignore that the problem can be solved in this manner.)"""
 
-def generate_n_chars(n, str):
+def generate_n_chars(n, st):
   result = ""
   for i in range(0,n):
-    result += str
-    print(result)
+    result = result + st
   return result
 
 #test
 print (generate_n_chars(5, "x"))
+
 print generate_n_chars(10, "*")
 print generate_n_chars(2, "Hello")
 

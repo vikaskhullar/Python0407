@@ -36,11 +36,63 @@ students = [
     {"name": "Anne", "grade": 80},
 ]
 
+students
+
+for student in students:
+    print(student)
+
+student['name']
+
+
+
+
 for student in students:  # student is a variable used for iteration
     name = student["name"]
     grade = student["grade"]
     print(f"{name} has a grade of {grade}.")
 
-# When to use?
-# When you want to repeat something a defined number of times.
-# For example, once for each element of a list, or even just "10 times"
+
+i = 0
+while(i<len(students)):
+    student = students[i]
+    name = student["name"]
+    grade = student["grade"]
+    print(f"{name} has a grade of {grade}.")
+    i=i+1
+    
+    
+10/0
+
+
+a = int(input("Enter Number a"))
+b = int(input("Enter Number b"))
+
+try:
+    c = a/b
+    print(c)
+except ZeroDivisionError:
+    print("Enter correct vale of b")
+    b = int(input("Enter Number b"))
+    c = a/b
+    print(c)
+
+
+a = iter(students)
+try:
+    student = next(a)
+    while True:
+        name = student["name"]
+        grade = student["grade"]
+        print(f"{name} has a grade of {grade}.")
+        student = next(a)
+except:
+    print("Stop iteration")
+
+
+
+    
+
+
+
+
+
