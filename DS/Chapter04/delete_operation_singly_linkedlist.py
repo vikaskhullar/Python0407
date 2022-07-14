@@ -52,8 +52,7 @@ class SinglyLinkedList:
                 return
             prev = current
             current = current.next
-            
-            
+               
 words = SinglyLinkedList()
 words.append('egg')
 words.append('ham')

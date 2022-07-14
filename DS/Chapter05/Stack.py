@@ -3,8 +3,6 @@ class Node:
         self.data = data  
         self.next = None  
        
-      
-      
 class Stack:  
     def __init__(self):  
         self.top = None  
@@ -63,5 +61,9 @@ while current:
     current = current.next
 
 
-words.peek()
+words.pop()
 
+current = words.top
+while current:
+    print(current.data)
+    current = current.next

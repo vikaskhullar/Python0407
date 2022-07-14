@@ -29,6 +29,7 @@ words.append('ham')
 words.append('spam')
 
 current = words.head
+current
 while current:
     print(current.data)
     current = current.next

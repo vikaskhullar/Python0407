@@ -7,10 +7,10 @@ def insertionSort(arr):
         while last >= 0 and key < arr[last]:
             arr[last +1] = arr[last]
             last = last - 1
-        
         arr[last + 1] = key
+        print(arr)
 
-arr = [1, 2, 3, 4, 5]
+arr = [3, 5, 4, 1, 2]
 insertionSort(arr)
 
 print(arr)

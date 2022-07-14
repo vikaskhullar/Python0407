@@ -8,8 +8,11 @@ def selectionSort(arr):
                 min_x = item
 
         arr[i], arr[min_x] = arr[min_x], arr[i]
+        
+        print(arr)
+        
 
-arr = [20, 12, 10, 15, 2]
+arr = [8, 7, 6, 5, 4]
 selectionSort(arr)
 
 print(arr)

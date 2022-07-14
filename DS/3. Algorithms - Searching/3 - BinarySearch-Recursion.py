@@ -8,6 +8,7 @@ def binarySearch(my_array, target):
 def helper(my_array, target, left, right):
     if left > right:
         return -1
+    
     middle = (left + right) // 2
     middle_element = my_array[middle]
 
@@ -21,6 +22,3 @@ def helper(my_array, target, left, right):
         left = middle + 1
         result = helper(my_array, target, left, right)
         return result
-    
-    
-binarySearch([5, 10, 15, 20, 25], 15)
