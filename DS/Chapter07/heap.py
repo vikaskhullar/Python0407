@@ -49,6 +49,7 @@ class MinHeap:
 
       
 h = MinHeap()
+
 for i in ( 4, 8, 7, 2, 9, 10, 5, 1, 3, 6):
     h.insert(i)
 print(h.heap)

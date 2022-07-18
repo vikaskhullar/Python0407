@@ -49,11 +49,14 @@ class MinHeap:
     def heap_sort(self):  
         sorted_list = []  
         for node in range(self.size):  
-            n = self.pop()  
+            n = self.heap.pop()  
             sorted_list.append(n)  
         return sorted_list 
       
       
+      
+      
+'''      
       
 h = MinHeap()
 for i in ( 4, 8, 7, 2, 9, 10, 5, 1, 3, 6):
@@ -66,7 +69,7 @@ unsorted_list = [4, 8, 7, 2, 9, 10, 5, 1, 3, 6]
 for i in unsorted_list:  
     h.insert(i)  
 print("Unsorted list: {}".format(unsorted_list))  
-
+'''
 
 
 

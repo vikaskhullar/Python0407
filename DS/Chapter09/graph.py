@@ -5,8 +5,11 @@ graph['C'] = ['A', 'B', 'E','F']
 graph['E'] = ['B', 'C'] 
 graph['F'] = ['C']
 
+graph
 matrix_elements = sorted(graph.keys())
 cols = rows = len(matrix_elements)  
+
+cols
 
 adjacency_matrix = [[0 for x in range(rows)] for y in range(cols)] 
 
@@ -17,9 +20,7 @@ for key in matrix_elements:
     for neighbor in graph[key]: 
         edges_list.append((key,neighbor)) 
 
-
 print(edges_list)
-
 
 
 for edge in edges_list: 
