@@ -10,8 +10,24 @@ matrix_elements = sorted(graph.keys())
 cols = rows = len(matrix_elements)  
 
 cols
-
+'''
 adjacency_matrix = [[0 for x in range(rows)] for y in range(cols)] 
+'''
+
+adjacency_matrix=[]
+
+for y in range(cols):
+    ls=[]
+    for x in range(rows):
+        ls.append(0)
+    adjacency_matrix.append(ls)
+adjacency_matrix
+
+
+
+import numpy as np
+adjacency_matrix = np.zeros((5,5)).astype(int).tolist()
+
 
 edges_list = [] 
 

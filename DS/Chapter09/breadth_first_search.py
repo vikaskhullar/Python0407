@@ -9,6 +9,19 @@ graph['G'] = ['A', 'E']
 graph['H'] = ['C']  
 
 
+'''
+# Python code to demonstrate deque
+	
+from collections import deque
+queue = deque(['name','age','DOB'])
+	
+print(queue)
+
+queue.append(10)
+
+queue.popleft()
+'''
+
 from collections import deque
 
 def breadth_first_search(graph, root): 
